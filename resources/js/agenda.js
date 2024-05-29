@@ -1,11 +1,14 @@
 
+    
+      const myModal = document.getElementById('myModal')
+      const myInput = document.getElementById('myInput')
     document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('agenda');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
 
           initialView: 'dayGridMonth',
-          locale:"es",
+          locale:'es',
 
           headerToolbar: {
             left: 'prev,next today',
@@ -13,10 +16,13 @@
             right: 'dayGridMonth,timeGridWeek,dayGridDay,listWeek'
           },
           
-          dateClick: function(info) {
-            alert('Date: ' + info.dateStr);
-            alert('Resource ID: ' + info.resource.id);
-            $('#calendar').modal('show');
+          dateClick: function(info){
+            console.log(info);
+            document.getElementById('eventoFecha').value = info.dateStr;
+            myModal.show();
+            // alert('Date: ' + info.dateStr);
+            // alert('Resource ID: ' + info.resource.id);
+            // $('#calendar').modal('show');
            
 
           }
