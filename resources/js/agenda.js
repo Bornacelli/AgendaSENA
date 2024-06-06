@@ -1,4 +1,3 @@
-        var myModal = new bootstrap.Modal(document.getElementById('myModal'));
         document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('agenda');
 
@@ -12,22 +11,20 @@
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,dayGridDay,listWeek'
           },
-          
-          // dateClick: function(info){
-          //   console.log(info);
-          //   document.getElementById('eventoFecha').value = info.dateStr;
-          //   myModal.show();
-            // alert('Date: ' + info.dateStr);
-            // alert('Resource ID: ' + info.resource.id);
-            // $('#calendar').modal('show');
-            // dateClick: function(dateClickInfo) { // Only for a specific date
-            //   // Here you can use the dateClicInfo with your createEvent function
-            //   createEvent(dateClickInfo.dateStr, 'Some event', undefined);
-            // },
-            // select: function(selectionInfo) { // Similar to dateClick
-            //   createEvent(selectionInfo.startStr, 'Some event', selectionInfo.endStr);
-            // }
 
+          eventClick: function(event) {
+            // Display event details in the modal
+            $('#eventTitle').text(event.title);
+            $('#eventStart').text('Start: ' + event.startStr);
+            $('#eventEnd').text('End: ' + event.endStr);
+            $('#eventDescription').text(event.extendedProps.description || '');
+    
+            // Show the modal
+            $('#MyModal').modal('show');
+  
+          }
+          
+          
           
 
           
@@ -35,3 +32,26 @@
         });
         calendar.render();
       });
+
+
+  // $(document).ready(function() {
+  //   var calendarEl = document.getElementById('agenda'); // Replace with your calendar element ID
+
+  //   var calendar = new FullCalendar.Calendar(calendarEl, {
+  //     // FullCalendar configuration options
+  //     eventClick: function(event) {
+  //       // Display event details in the modal
+  //       $('#eventTitle').text(event.title);
+  //       $('#eventStart').text('Start: ' + event.startStr);
+  //       $('#eventEnd').text('End: ' + event.endStr);
+  //       $('#eventDescription').text(event.extendedProps.description || '');
+
+  //       // Show the modal
+  //       $('#eventModal').modal('show');
+  //     }
+  //   });
+
+  //   calendar.render();
+  // });
+
+
