@@ -1,57 +1,22 @@
-        document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('agenda');
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('agenda');
 
-        var calendar = new FullCalendar.Calendar(calendarEl, {
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      locale: 'es',
+      headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,dayGridDay,listWeek'
+      },
+      dateClick: function(info) {
+          // Mostrar la fecha en el campo de entrada del modal
+          document.getElementById('eventoFecha').value = info.dateStr;
+          // Mostrar el modal
+          var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+          myModal.show();
+      }
+  });
 
-          initialView: 'dayGridMonth',
-          locale:'es',
-
-          headerToolbar: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'dayGridMonth,timeGridWeek,dayGridDay,listWeek'
-          },
-
-          eventClick: function(event) {
-            // Display event details in the modal
-            $('#eventTitle').text(event.title);
-            $('#eventStart').text('Start: ' + event.startStr);
-            $('#eventEnd').text('End: ' + event.endStr);
-            $('#eventDescription').text(event.extendedProps.description || '');
-    
-            // Show the modal
-            $('#MyModal').modal('show');
-  
-          }
-          
-          
-          
-
-          
-
-        });
-        calendar.render();
-      });
-
-
-  // $(document).ready(function() {
-  //   var calendarEl = document.getElementById('agenda'); // Replace with your calendar element ID
-
-  //   var calendar = new FullCalendar.Calendar(calendarEl, {
-  //     // FullCalendar configuration options
-  //     eventClick: function(event) {
-  //       // Display event details in the modal
-  //       $('#eventTitle').text(event.title);
-  //       $('#eventStart').text('Start: ' + event.startStr);
-  //       $('#eventEnd').text('End: ' + event.endStr);
-  //       $('#eventDescription').text(event.extendedProps.description || '');
-
-  //       // Show the modal
-  //       $('#eventModal').modal('show');
-  //     }
-  //   });
-
-  //   calendar.render();
-  // });
-
-
+  calendar.render();
+});

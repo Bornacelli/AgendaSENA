@@ -13,12 +13,16 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.js"></script>
+    <!-- Styles -->
+    @vite(['resources/sass/app.scss'])
 
+    <!-- FullCalendar -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js"></script>
 
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -75,10 +79,12 @@
                 </div>
             </div>
         </nav>
-        @vite(['resources/js/agenda.js'])
+        
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+
+    @vite(['resources/js/app.js', 'resources/js/agenda.js'])
 </body>
 </html>
