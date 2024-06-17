@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 @section('content')
 
-<div class="container">
+<div class="container" style="width: 90%">
     <div id="agenda">
         <!-- El calendario se renderizará aquí -->
     </div>

@@ -1,0 +1,28 @@
+
+.btn-login{
+  background: #39a900;
+  color: #FBFCFC;
+  border-color: #39a900;
+  width: 100%;
+}
+.btn-login:hover{
+  background: #7fec48;
+  color: #FBFCFC;
+  border-color: #7fec48;;
+}
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #39a900;
+  }
+
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    }
+  }

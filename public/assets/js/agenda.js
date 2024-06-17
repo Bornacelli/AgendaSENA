@@ -61,6 +61,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('btnModificar').addEventListener('click', function() {
                     myModal.hide();
                 });
+
+                document.getElementById('btnGuardar').addEventListener('click', function ocultarBoton() {
+                    style.display = 'none';
+                });
+
+                // function ocultarBoton() {
+                //     document.getElementById('btnGuardar').style.display = 'none';
+                // }
+                // ocultarBoton();
             }
 
         ).catch(

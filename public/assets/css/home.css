@@ -1,0 +1,567 @@
+main {
+
+    margin-left: 10rem;
+    width: 80%;
+    height: 40rem;
+}
+
+.sectionhome {
+    width: 100%;
+    height: 20rem;
+    background-image: url(../img/banneregresados.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+
+
+
+.text__inicio {
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.indentidad {
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    margin-top: 30px;
+}
+
+.indentidad p {
+    color: black;
+}
+
+.cartas {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+.mision {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+.card {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: auto;
+    border: 1px solid #39a900;
+    /* padding-right: 10rem; */
+    border-radius: 20px;
+
+}
+
+/* .card-body{
+    /* margin-right: 10rem; */
+/* } */
+
+
+.card-text {
+    color: black;
+}
+
+.sectionhome1 {
+    width: 100%;
+    height: 44rem;
+    background-color: #39a900;
+    margin-top: 3rem;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+
+}
+
+.personaje3d {
+    width: 10rem;
+    height: 10rem;
+}
+
+.imgperson {
+    width: 34rem;
+    margin-left: 60px;
+}
+
+.cartas {
+    margin-left: 30rem;
+    padding: 10px;
+    display: flex;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.cartas_hijo:nth-child(1) {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+.cartas_hijo:nth-child(2) {
+    width: 100%;
+    height: 14rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cartas_hijo:nth-child(3) {
+    width: 100%;
+    height: 15rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+.card_efect {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 320px;
+    height: 190px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    /* box-shadow: 0 0 0 5px #ffffff80; */
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: red;
+}
+
+#imagen1 {
+    background: rgb(226, 231, 12);
+    background: linear-gradient(50deg, rgba(226, 231, 12, 1) 0%, rgba(217, 196, 13, 1) 64%);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#imagen2 {
+    background: rgb(192, 27, 63);
+    background: linear-gradient(50deg, rgba(192, 27, 63, 1) 35%, rgba(240, 70, 81, 1) 100%);
+
+
+    background-size: cover;
+    overflow: hidden;
+}
+
+#imagen3 {
+    background: rgb(80, 183, 192);
+    background: linear-gradient(50deg, rgba(80, 183, 192, 1) 0%, rgba(35, 131, 150, 1) 100%);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#imagen4 {
+    background: rgb(246, 54, 17);
+    background: linear-gradient(45deg, rgba(246, 54, 17, 1) 0%, rgba(249, 107, 0, 1) 100%);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#imagen5 {
+    background: rgb(82, 82, 82);
+    background: linear-gradient(45deg, rgba(82, 82, 82, 1) 0%, rgba(143, 140, 140, 1) 100%);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#imagen1 img {
+    transform: translateX(-9rem);
+    height: 19rem;
+    width: 62%;
+}
+
+#imagen2 img {
+    height: 10rem;
+    width: 65%;
+    transform: translateY(2rem);
+    margin-right: 12rem;
+    opacity: 1;
+
+}
+
+#imagen3 img {
+    transform: translateX(-15rem);
+    height: 12rem;
+    width: 50%;
+}
+
+#imagen4 img {
+    transform: translateX(-4.5rem);
+    height: 19rem;
+    width: 62%;
+}
+
+#imagen5 img {
+    transform: translateX(-7rem);
+    height: 10rem;
+    width: 50%;
+}
+
+.contenedor__text_egresados {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contenedor__text_eventos {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contenedor__text_empre {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.contenedor__text_curso {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contenedor__text_actu {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contenedor__text_egresados .cantidad {
+    position: relative;
+    margin-left: 7rem;
+    line-height: 72px;
+    font-size: 4rem;
+    color: #c5961a;
+    font-weight: 700;
+}
+
+
+
+
+
+.contenedor__text_eventos .eventos_text {
+    position: relative;
+    margin-left: 7.5rem;
+    line-height: 72px;
+    font-size: 3rem;
+    color: #ff4b86;
+    font-weight: 700;
+}
+
+.contenedor__text_empre .empre_text {
+    position: relative;
+    margin-right: 17.5rem;
+    line-height: 72px;
+    font-size: 1rem;
+    color: #94e9ec;
+
+}
+
+.contenedor__text_curso .curso {
+    position: relative;
+    margin-right: 17.5rem;
+    line-height: 72px;
+    font-size: 1rem;
+    color: #94e9ec;
+
+}
+
+.contenedor__text_actu .actu {
+    position: relative;
+    margin-right: 17.5rem;
+    line-height: 72px;
+    font-size: 1rem;
+    color: #94e9ec;
+
+}
+
+
+
+.contenedor__text_egresados .mil {
+    color: #c5961a;
+    margin-top: 2.9rem;
+    font-weight: 700;
+}
+
+.contenedor__text_eventos .eventos {
+    color: #ff4b86;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    margin-left: 8.5rem;
+
+}
+
+.contenedor__text_empre .empre {
+    color: #94e9ec;
+    margin-top: 2rem;
+    font-size: 1.9rem;
+    margin-left: 8.5rem;
+    font-weight: 700;
+
+}
+
+.contenedor__text_curso .curso {
+    color: #fb8608;
+    margin-top: 2rem;
+    font-size: 1.9rem;
+    margin-left: 12.5rem;
+    font-weight: 700;
+
+}
+
+.contenedor__text_actu .actu {
+    color: #bbb8b8;
+    margin-top: 2rem;
+    font-size: 1.9rem;
+    margin-left: 7.5rem;
+    font-weight: 700;
+
+}
+
+.text_cantidad_egresados {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    margin-top: -7px;
+}
+
+.text_egresados_card {
+    text-align: center;
+    position: absolute;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.egresados_text {
+    font-weight: 400;
+    color: #c5961a;
+    font-size: 2rem;
+    margin-left: 4.5rem;
+}
+
+.activos_text {
+    font-size: 20px;
+    margin-top: -1.8rem;
+    color: #c5961a;
+    margin-left: 4rem;
+}
+
+.curso_text {
+    font-size: 13px;
+    margin-top: 2rem;
+    color: #fb8608;
+    margin-left: 12.5rem;
+}
+
+.actu_text {
+    font-size: 15px;
+    margin-top: 2rem;
+    color: #bbb8b8;
+    margin-left: 5.9rem;
+}
+
+.grande {
+
+    width: 91%;
+
+}
+
+
+.card_efect svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card_efect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:white;
+    color: black;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__content__egresados{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(226, 231, 12);
+    background: linear-gradient(50deg, rgba(226, 231, 12, 1) 0%, rgba(217, 196, 13, 1) 64%);
+    color: black;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__content__eventos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(192, 27, 63);
+    background: linear-gradient(50deg, rgba(192, 27, 63, 1) 35%, rgba(240, 70, 81, 1) 100%);
+    color: black;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__content__empre{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(80, 183, 192);
+    background: linear-gradient(50deg, rgba(80, 183, 192, 1) 0%, rgba(35, 131, 150, 1) 100%);
+    color: black;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__content__curso{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(246, 54, 17);
+    background: linear-gradient(45deg, rgba(246, 54, 17, 1) 0%, rgba(249, 107, 0, 1) 100%);
+    color: black;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.card__content__actu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(82, 82, 82);
+    background: linear-gradient(45deg, rgba(82, 82, 82, 1) 0%, rgba(143, 140, 140, 1) 100%);
+    color: black;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+.card_efect:hover .card__content  {
+    transform: rotateX(0deg);
+}
+
+.card_efect:hover .card__content__egresados{
+    transform: rotateX(0deg);
+}
+
+.card_efect:hover .card__content__eventos{
+    transform: rotateX(0deg);
+}
+
+.card_efect:hover .card__content__empre{
+    transform: rotateX(0deg);
+}
+
+.card_efect:hover .card__content__curso{
+    transform: rotateX(0deg);
+}
+
+.card_efect:hover .card__content__actu{
+    transform: rotateX(0deg);
+}
+
+
+
+
+
+
+
+
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.card_efect:hover svg {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.4;
+}
