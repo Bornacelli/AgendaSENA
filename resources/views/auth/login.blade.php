@@ -107,10 +107,6 @@
             <div class="card rounded-3 text-black shadow">
               <div class="row g-0">
                 <div class="col-md-6 d-flex align-items-center gradient-custom-2">
-                  {{-- <div class="text-white px-4 py-4 p-md-4 mx-md-3">
-                    <h3 class="mb-2 mb-md-4">Bienvenido a la Plataforma de Bienestar Sena CNCA!</h3>
-                    <p class="mb-0 fw-semibold">Querido instructor del área de bienestar del CNCA, te invitamos ha ingresar a la plataforma con tus credenciales(Correo y Contraseña).</p>
-                  </div> --}}
                   <img src="{!! asset('assets/img/sena_logo.svg') !!}" alt="">
                 </div>
                 <div class="col-md-6 bg-light">

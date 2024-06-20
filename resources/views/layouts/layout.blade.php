@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGENDA</title>
-    <link href="{!! asset('assets/img/sena_logo.svg') !!}" rel="icon">
+    <link href="{!! asset('assets/img/senaico.svg') !!}" rel="icon">
 
 
     <!-- DataTablets Style -->
@@ -22,8 +22,11 @@
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js"></script>
 
     <!-- Bootstrap -->
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 
     
 
@@ -60,7 +63,7 @@
 
                     {{-- <hr class="mt-0 mb-0 ms-3"> --}}
                     <div class="container">
-                        <a class="fw-semibold ms-4  text-decoration-none menuh" href=""><i
+                        <a class="fw-semibold ms-4  text-decoration-none menuh" href="{{ route('users.index') }}"><i
                                 class="bi bi-people me-2"></i>Usuarios</a>
                     </div>
                     <div class="container">

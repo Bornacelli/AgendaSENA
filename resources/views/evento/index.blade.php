@@ -15,15 +15,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    {{-- <input type="text" id="eventoFecha" class="form-control" readonly> --}}
-
-                    <form action="">
-
-                      {{-- {!! csrf_field() !!} --}}
-
+                    <form id="eventoForm">
                         <div class="form-group">
                           <label for="id">ID:</label>
-                          <input type="text" class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="">
+                          <input type="text" class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="" readonly>
                           <small id="helpId" class="form-text text-muted">Help text</small>
                         </div>
 
@@ -39,17 +34,16 @@
                         </div>
 
                         <div class="form-group">
-                          <label for="start">start</label>
+                          <label for="start">Inicio</label>
                           <input type="date" id="start" name="start" class="form-control">
                           <small id="helpId" class="form-text text-muted">Help text</small>
                         </div>
 
                         <div class="form-group">
-                          <label for="end">end</label>
+                          <label for="end">Fin</label>
                           <input type="date" id="end" name="end" class="form-control">
                           <small id="helpId" class="form-text text-muted">Help text</small>
                         </div>
-
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -57,7 +51,6 @@
                     <button type="button" class="btn btn-warning" id="btnModificar">Modificar</button>
                     <button type="button" class="btn btn-danger" id="btnEliminar">Eliminar</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    
                 </div>
             </div>
         </div>
