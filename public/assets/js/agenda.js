@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
             myModal.show();
 
             document.getElementById('btnGuardar').addEventListener('click', function() {
-                enviarDatos("/evento/agregar");
+                // enviarDatos("/evento/agregar"); ----envia dos veces----
                 myModal.hide();
-            }, { once: true });
+            });
         },
         eventClick: function(info) {
             var evento = info.event;
@@ -39,7 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 .then((respuesta) => {
                     formulario.id.value = respuesta.data.id;
                     formulario.title.value = respuesta.data.title;
+
                     formulario.descripcion.value = respuesta.data.descripcion;
+
                     formulario.start.value = respuesta.data.start;
                     formulario.end.value = respuesta.data.end;
 

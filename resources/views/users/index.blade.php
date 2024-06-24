@@ -1,17 +1,26 @@
 @extends('layouts.layout')
 
 @section('content')
-    <h1>Users</h1>
-    <a href="{{ route('users.create') }}">Create New User</a>
-    <table>
+
+    
+    <button class="b-crear">
+        <a href="{{ route('users.create') }}" style="text-decoration: none; color:#fff;" >
+            <i class="bi bi-plus-circle"> </i>
+        Crear
+        </a>
+    </button>
+    <table class="table table-bordered tabled-hover table-striped nowrap shadow-sm table-datatable table-responsive"
+    style="width:100%">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Full Name</th>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Phone Number</th>
-                <th>Actions</th>
+                <th>Nombre Completo</th>
+                <th>Usuario</th>
+                <th>Correo Electrónico</th>
+                <th>Número de Teléfono</th>
+                <th>Mostrar</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
             </tr>
         </thead>
         <tbody>
@@ -22,13 +31,19 @@
                     <td>{{ $user->username }}</td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->phone_number }}</td>
-                    <td>
-                        <a href="{{ route('users.show', $user->id) }}">View</a>
-                        <a href="{{ route('users.edit', $user->id) }}">Edit</a>
+                    <td class="text-center">
+                        <a href="{{ route('users.show', $user->id) }}"><i class="fs-4 text-secondary bi bi-eye-fill text-success"></i></a>
+                    </td>
+
+                    <td class="text-center">
+                        <a href="{{ route('users.edit', $user->id) }}"><i class="fs-4 text-secondary bi bi-pencil-square text-secondy"></i></a>
+                    </td>
+
+                    <td class="text-center">
                         <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit">Delete</button>
+                            <button type="submit" style="border: none"><i class="fs-4 text-secondary bi bi-trash-fill text-danger"></i></button>
                         </form>
                     </td>
                 </tr>

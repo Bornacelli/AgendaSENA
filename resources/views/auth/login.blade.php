@@ -81,12 +81,6 @@
     <meta charset="utf-8">
     <title>SENA</title>
 
-    <meta content="Portal oficial de bienestar al aprendiz Sena del Centro
-    Nacional Colombo Alemán, podrá observar las diferentes actividades que
-    se han realizado y podrá realizar la encuesta psicosocial." name="description">
-
-    <meta content="Sena, Centro Nacional Colombo Aleman, Bienestar, Aprendiz Sena" name="keywords">
-
     <!-- Favicons -->
     <link href="{!! asset('assets/img/sena_logo.svg') !!}" rel="icon">
 

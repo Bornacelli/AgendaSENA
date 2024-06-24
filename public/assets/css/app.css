@@ -3,6 +3,10 @@
     --color-bg-2: #39a900;
     --color-font-1: #ffffff;
 }
+
+.icon-color {
+    color: var(--color-bg-2);
+}
 .nbre {
     position: absolute;
     left: 80%;
@@ -203,6 +207,20 @@ hr {
 .menuh:hover{
     color: #31790d;
 }
+
+.b-crear {
+    background-color: rgba(57, 169, 0, 0.59);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-left: 73%;
+}
+
+.c-input {
+    padding: 10px 0;
+}
+
 @media (max-width: 767px) {
     .nbre {
         display: none;

@@ -26,12 +26,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-
-    
-
-
-
     <script src="{{ asset('assets/js/newMotivo.js') }}"></script>
     <script src="{{ asset('assets/js/main2.js') }}"></script>
 
@@ -49,16 +43,16 @@
                 <img src="{{ asset('assets/img/senalogo.svg') }}" class="logosena" alt="logosena">
                 <div class="container-link d-flex flex-column gap-4 justify-start align-items-start ms-2">
 
-                    <hr class="mt-0 mb-0 ms-3">
+                    <hr class="mt-0 mb-0 ms-3 " style="background-color: #fff">
 
                     <div class="container">
                         <a class="fw-semibold ms-4 text-decoration-none menuh menuh" href=""> <i
                                 class="bi bi-house me-2"></i>Inicio</a>
                     </div>
-                    <div class="container">
+                    {{-- <div class="container">
                         <a class="fw-semibold ms-4  text-decoration-none menuh" href=""><i
                                 class="bi bi-person-gear me-2"></i>Administradores</a>
-                    </div>
+                    </div> --}}
 
 
                     {{-- <hr class="mt-0 mb-0 ms-3"> --}}
@@ -73,10 +67,10 @@
 
 
                     <div class="container"> <a class="fw-semibold ms-4  text-decoration-none menuh"
-                            href=""><i class="bi bi-journal-check me-2"></i>Agenda</a>
+                            href="{{ url('/evento') }}"><i class="bi bi-journal-check me-2"></i>Agenda</a>
                     </div>
 
-                    <hr class="mt-0 mb-0 ms-3">
+                    <hr class="mt-0 mb-0 ms-3" style="background-color: #fff">
 
 
                     <div class="container"> <a class="fw-semibold ms-4  text-decoration-none menuh"
@@ -98,7 +92,7 @@
             <nav>
                 <p class="fw-semibold "></p>
 
-                <p class="fw-semibold nbre mt-3">{{ Auth::User()->name }}</p>
+                <p class="fw-semibold nbre mt-3"><i class="bi bi-person-gear me-2"></i>{{ Auth::User()->full_name  }}</p>
                 <a type="button" class=" text-decoration-none menuh text-dark" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     <i class="d-md-none bi bi-list"></i>

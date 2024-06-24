@@ -5,6 +5,7 @@
     <div id="agenda">
         <!-- El calendario se renderizará aquí -->
     </div>
+    
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
