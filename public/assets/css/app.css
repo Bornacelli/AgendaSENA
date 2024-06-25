@@ -5,7 +5,11 @@
 }
 
 .icon-color {
-    color: var(--color-bg-2);
+    color: rgba(57, 169, 0, 0.59);
+}
+
+.ico-color {
+    color: rgba(179, 176, 182, 0.555);
 }
 .nbre {
     position: absolute;
@@ -214,13 +218,44 @@ hr {
     border: none;
     border-radius: 5px;
     padding: 5px 20px;
-    margin-left: 73%;
+    margin-left: 80%;
 }
 
 .c-input {
     padding: 10px 0;
 }
 
+.btn-create {
+    background-color: rgba(57, 169, 0, 0.59);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.logousuario {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.p-user {
+    color: #39a900;
+    font-weight: 700;
+}
+
+.l-back{
+    color: #92d86e;
+}
+
+.l-back:hover {
+    color: #31790d;
+}
+
+.l-user {
+    color: #9e9d9d;
+    font-weight: 600;
+}
 @media (max-width: 767px) {
     .nbre {
         display: none;

@@ -4,7 +4,7 @@ new DataTable('.table-datatable', {
     info: false,
     "language": {
         "lengthMenu": "Mostrar _MENU_ registros por páginas",
-        "zeroRecords": "No se encontro ningun registro - Disculpa",
+        "zeroRecords": "Registro no encontrado....",
         "infoEmpty": "No records available",
         "search": "Buscar Registros:",
         "loadingRecords": "Cargando Registros...",
@@ -12,7 +12,7 @@ new DataTable('.table-datatable', {
             "first": "Primera",
             "last": "Última",
             "next": "Siguiente",
-            "previous": "Previa"
+            "previous": "Anterior"
         }
     },
 });

@@ -10,6 +10,7 @@
 
     <!-- DataTablets Style -->
     <link rel="stylesheet" href="{{ asset('assets/css/datatables.css') }}">
+    
     <!-- Vendor CSS Files -->
     <link href="{!! asset('assets/vendor/bootstrap/css/bootstrap.min.css') !!}" rel="stylesheet">
     <link href="{!! asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') !!}" rel="stylesheet">

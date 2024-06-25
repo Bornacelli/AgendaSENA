@@ -45,7 +45,7 @@
               </div>
           </div>
 
-        <button type="submit">Crear Nuevo Usuario</button>
+        <button type="submit" class="btn-create">Crear Nuevo Usuario</button>
     </form>
 
 @endsection
