@@ -38,7 +38,7 @@
                         <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" style="border: none"><i class="fs-5 bi bi-trash-fill me-2 icon-color" ></i></button>
+                            <button type="submit" style="border: none; background:none;"><i class="fs-5 bi bi-trash-fill me-2 icon-color" ></i></button>
                         </form>
                     </td>
                 </tr>

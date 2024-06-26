@@ -8,9 +8,6 @@
     color: rgba(57, 169, 0, 0.59);
 }
 
-.ico-color {
-    color: rgba(179, 176, 182, 0.555);
-}
 .nbre {
     position: absolute;
     left: 80%;
@@ -231,6 +228,23 @@ hr {
     border: none;
     border-radius: 5px;
     padding: 5px 20px;
+}
+
+.btn-atras {
+    background-color: rgba(57, 169, 0, 0.59);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.btn-atras a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-atras a:hover {
+    color: #31790d;
 }
 
 .logousuario {
